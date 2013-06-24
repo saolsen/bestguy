@@ -7,7 +7,7 @@
   (GET "/" r "bestguy example app"))
 
 (defn create-app [port]
-  (jetty/run-jetty app {:join? false :port port}))
+  (jetty/run-jetty #'app {:join? false :port port}))
 
 (defn -main
   [& args]

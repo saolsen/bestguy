@@ -5,10 +5,12 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]]
   :profiles {:examples
-             {:dependencies [[ring/ring-core "1.2.0-beta1"]
+             {:dependencies [[org.clojure/clojurescript "0.0-971"]
+                             [ring/ring-core "1.2.0-beta1"]
                              [ring/ring-jetty-adapter "1.2.0-beta1"]
                              [compojure "1.1.5"]
-                             [clojail "1.0.6"]]
+                             [nrepl-cljs-middleware "0.0.1"]
+                             [hiccup "1.0.3"]]
               :plugins [[lein-cljsbuild "0.3.0"]]
               :source-paths ["examples/clj"]
               :cljsbuild
